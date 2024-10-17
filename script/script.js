@@ -14,3 +14,12 @@ function makeGuess() {
         document.getElementById('feedback').innerHTML = 'Troppo basso! Riprova.';
     }
 }
+
+function resetGame() {
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    attempts = 0;
+    document.getElementById('feedback').innerHTML = '';
+    document.getElementById('guessInput').value = '';
+    document.getElementById('feedback').style.color = '#555';
+}
+
